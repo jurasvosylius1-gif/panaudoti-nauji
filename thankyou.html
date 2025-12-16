@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="lt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ačiū — Paduota</title>
+  <meta name="robots" content="noindex">
+  <style>
+    :root{
+      --page-bg:#f4f7fb;
+      --card-bg:#ffffff;
+      --muted:#6b7280;
+      --accent:#6f42c1;
+      --cta:#37a64b;
+      --radius:12px;
+      --shadow:0 8px 30px rgba(18,23,28,0.06);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Inter, system-ui, Arial, sans-serif;
+      background:var(--page-bg);
+      color:#0f172a;
+      display:flex;
+      min-height:100vh;
+      align-items:center;
+      justify-content:center;
+      padding:32px;
+    }
+    .card{
+      max-width:760px;
+      width:100%;
+      background:var(--card-bg);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:40px;
+      text-align:center;
+    }
+    .tick{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width:64px;
+      height:64px;
+      border-radius:50%;
+      background:rgba(55,166,75,0.12);
+      color:var(--cta);
+      font-size:30px;
+      margin:0 auto 14px;
+    }
+    h1{ margin:6px 0 8px; font-size:22px; }
+    p{ color:var(--muted); margin:0 0 18px; }
+    .home{
+      display:inline-block;
+      margin-top:20px;
+      background:var(--accent);
+      color:white;
+      padding:12px 20px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:700;
+    }
+    footer{ margin-top:18px; color:var(--muted); font-size:13px }
+    @media (max-width:560px){ .card{ padding:20px } h1{ font-size:18px } }
+  </style>
+</head>
+<body>
+  <main class="card" role="main" aria-labelledby="thank-you">
+    <div class="tick" aria-hidden="true">✔</div>
+    <h1 id="thank-you">Ačiū — Jūsų žinutė sėkmingai išsiųsta!</h1>
+    <p>Gavome jūsų pranešimą. Susisieksime su jumis.</p>
+    <a class="home" href="https://jurasvosylius1-gif.github.io/panaudoti-nauji/">Grįžti į pradžią</a>
+    <footer>Pateikdami formą sutinkate su privatumo politika.</footer>
+  </main>
+</body>
+</html>
