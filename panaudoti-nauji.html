@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drabužiai vaikams antram gyvenimui</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f7f9fc;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background: white;
+    }
+    .btn-main {
+      background: #4CAF50;
+      color: white;
+      padding: 14px 26px;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    .form-section {
+      width: 100%;
+      max-width: 850px;
+      margin: 80px auto;
+      padding: 40px;
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    input, textarea, select {
+      padding: 14px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      width: 100%;
+    }
+    textarea {
+      height: 120px;
+      resize: vertical;
+    }
+    button {
+      background: #6f42c1;
+      color: white;
+      padding: 14px;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 40px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <p style="color:#4CAF50; font-weight:600;">✔ Tvarumas ir taupymas</p>
+  <h1>Drabužiai vaikams <span style="color:#6f42c1;">antram gyvenimui</span></h1>
+  <p>Kokybiški drabužiai jūsų vaikams už prieinamą kainą.</p>
+  <a class="btn-main" href="#form">Pateikti prašymą</a>
+</header>
+
+<section class="form-section" id="form">
+  <h2>Pradėkite <span style="color:#6f42c1;">šiandien</span></h2>
+  <p style="text-align:center; margin-bottom:30px;">Užpildykite formą ir susisieksime su jumis per 24 val.</p>
+
+  <form action="https://formsubmit.co/jurasvosylius1@gmail.com" method="POST">
+    <label>Jus domina</label>
+    <select name="domina" required>
+      <option value="Paieška">Paieška</option>
+      <option value="Prašymas">Prašymas</option>
+    </select>
+
+    <label>Vardas</label>
+    <input type="text" name="vardas" required>
+
+    <label>El. paštas</label>
+    <input type="email" name="email" required>
+
+    <label>Telefonas</label>
+    <input type="text" name="telefonas" placeholder="+370 600 00000">
+
+    <label>Žinutė</label>
+    <textarea name="zinute" required></textarea>
+
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+
+    <button type="submit">Pateikti</button>
+  </form>
+</section>
+
+<footer>
+  Pateikdami formą sutinkate su privatumo politika.
+</footer>
+
+</body>
+</html>
+````markdown name=README.md
+```markdown
+# Panaudoti-nauji — Website
+
+This repository contains a simple static site. To share the site publicly, publish it with GitHub Pages.
+
+Published URL (after enabling Pages):
+https://jurasvosylius1-gif.github.io/panaudoti-nauji/
+
+How to publish (web UI)
+1. Open: https://github.com/jurasvosylius1-gif/panaudoti-nauji
+2. Click "Add file" → "Create new file"
+3. For filename enter: index.html
+4. Paste the index.html content (above)
+5. In the commit box below:
+   - Put a commit message like: Add index.html
+   - If you see "Commit directly to the main branch" choose it; otherwise choose the default/new-branch option and then click the green button (it may say "Propose new file")
+6. If you created a PR, open it and click "Merge pull request" → "Confirm merge". That creates the main branch and adds the file.
+7. Repeat to add README.md (filename README.md) and paste the README content.
+8. Go to Settings → Code and automation → Pages
+   - Under "Build and deployment" choose Branch: main and folder: / (root) and click Save.
+9. Wait ~1 minute and open:
+   https://jurasvosylius1-gif.github.io/panaudoti-nauji/
+
+How to publish (Git on your computer)
+1. Save index.html and README.md into a folder.
+2. Run:
+   git init
+   git branch -M main
+   git remote add origin https://github.com/jurasvosylius1-gif/panaudoti-nauji.git
+   git add index.html README.md
+   git commit -m "Add website"
+   git push -u origin main
+3. Then enable Pages in the repository Settings → Pages (Branch: main, root).
+
+Notes
+- If the web editor button says "Propose new file", follow the PR flow and merge the PR; that will create the main branch.
+- The form sends email via FormSubmit (formsubmit.co) to the email in the form. Test it after the site is live.
